@@ -250,10 +250,10 @@ Primary use:
 /*---------------------------------------------*/
 .bg-g1 {
   background: #fb5f7e;
-  background: -webkit-linear-gradient(bottom, #4b6cb7, #182848);
-  background: -o-linear-gradient(bottom, #4b6cb7, #182848);
-  background: -moz-linear-gradient(bottom, #4b6cb7, #182848);
-  background: linear-gradient(bottom, #4b6cb7, #182848);
+  background: -webkit-linear-gradient(bottom, #182848, #4b6cb7);
+  background: -o-linear-gradient(bottom, #182848, #4b6cb7);
+  background: -moz-linear-gradient(bottom, #182848, #4b6cb7);
+  background: linear-gradient(bottom, #182848, #4b6cb7);
 }
 
 
@@ -312,10 +312,10 @@ Primary use:
   top: 0;
   left: 0;
   background: #fb2e57;
-  background: -webkit-linear-gradient(top, #f65342, #fb3282);
-  background: -o-linear-gradient(top, #f65342, #fb3282);
-  background: -moz-linear-gradient(top, #f65342, #fb3282);
-  background: linear-gradient(top, #f65342, #fb3282);
+  background: -webkit-linear-gradient(bottom, #182848, #4b6cb7);
+  background: -o-linear-gradient(bottom, #182848, #4b6cb7);
+  background: -moz-linear-gradient(bottom, #182848, #4b6cb7);
+  background: linear-gradient(bottom, #182848, #4b6cb7);
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
