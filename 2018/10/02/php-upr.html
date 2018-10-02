@@ -11,7 +11,7 @@
 
   <title>
     
-      Записки по Дискретни структури &middot; Peter Lyubenov
+      PHP базирани работни рамки - упражнение 1 &middot; Peter Lyubenov
     
   </title>
 
@@ -168,33 +168,61 @@
 
     <main class="container">
       <header>
-  <h1 class="post-title">Записки по Дискретни структури</h1>
+  <h1 class="post-title">PHP базирани работни рамки - упражнение 1</h1>
 </header>
 <div class="content">
   <div class="post-meta">
   <span class="post-date">02 Oct 2018</span>
   <span class="post-categories">
     
-      &bull;
-
-      
-      
-      
-
-      
-        <a href="/notes/">
-          Записки
-        </a>
-      
-    
   </span>
 </div>
 
 
   <div class="post-body">
-    <p>Всичките ми записки по лекциите по Дискретни структури можете да намерите <a href="https://docs.google.com/document/d/1vc7HteiSO8B1uZj1aRheYjo5Me59SToRKeJap-KZPWc/edit?usp=sharing">тук</a>.</p>
+    <ul>
+  <li>Обикновено се използва заедно с Apache (HTTP сървър) и MySQL (БД)</li>
+  <li>(аз лично ползвам XAMPP софтуерен пакет който включва всичко + графичен интерфейс ^-^)</li>
+</ul>
 
-<p>Ако не съм се отказал, трябва да се актуализират след всяка лекция</p>
+<p>PHP Hello world</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+    <span class="k">echo</span> <span class="s2">"hello world"</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Променливи, функции, цикли</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="cm">/*
+Променливите нямат тип
+Задават се с $ и името
+*/</span>
+<span class="nv">$a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="nv">$b</span> <span class="o">=</span> <span class="s2">"Кон"</span><span class="p">;</span>
+
+<span class="c1">//Дефиниране на функция</span>
+<span class="c1">//Може да върне нещо или нищо, не се пояснява</span>
+<span class="k">function</span> <span class="nf">sum</span><span class="p">(</span><span class="nv">$a</span><span class="p">,</span> <span class="nv">$b</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">return</span> <span class="nv">$a</span><span class="o">+</span><span class="nv">$b</span><span class="p">;</span> <span class="c1">//Независимо нали int или нещо друго; може да даде грешка ако не се използва с числа</span>
+<span class="p">}</span>
+
+<span class="c1">//Цикли/loops</span>
+<span class="k">for</span><span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">echo</span> <span class="nv">$i</span><span class="p">;</span> <span class="c1">//0123456789</span>
+<span class="p">}</span>
+
+<span class="nv">$j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">while</span><span class="p">(</span><span class="nv">$j</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">)</span>
+<span class="p">{</span>	
+    <span class="k">echo</span> <span class="nv">$j</span><span class="p">;</span> <span class="c1">//0123456789</span>
+    <span class="nv">$j</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
 
     
 
@@ -203,36 +231,25 @@
 <div class="post-tags">
   
     
-    <a href="/tags.html#записки">
+    <a href="/tags.html#упражнение">
     
       <span class="icon">
         <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
 </svg>
-      </span>&nbsp;<span class="tag-name">записки</span>
+      </span>&nbsp;<span class="tag-name">упражнение</span>
     </a>
   
     
-    <a href="/tags.html#математика">
+    <a href="/tags.html#php">
     
       <span class="icon">
         <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
 </svg>
-      </span>&nbsp;<span class="tag-name">математика</span>
-    </a>
-  
-    
-    <a href="/tags.html#дискретни-структури">
-    
-      <span class="icon">
-        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h24v24H0z" fill="none"/>
-    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
-</svg>
-      </span>&nbsp;<span class="tag-name">дискретни структури</span>
+      </span>&nbsp;<span class="tag-name">php</span>
     </a>
   
     
@@ -267,8 +284,8 @@
     
       <li>
         <h3>
-          <a href="/2018/10/02/php-upr.html">
-            PHP базирани работни рамки - упражнение 1
+          <a href="/%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8/2018/10/02/discrete-math-notes.html">
+            Записки по Дискретни структури
             <small>02 Oct 2018</small>
           </a>
         </h3>
