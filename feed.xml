@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-03T11:07:30+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Peter Lyubenov</title><subtitle>Софтуерно инженерство II курс</subtitle><entry><title type="html">Въведение в Java</title><link href="http://localhost:4000/2018/10/03/java-vuvedenie.html" rel="alternate" type="text/html" title="Въведение в Java" /><published>2018-10-03T00:00:00+03:00</published><updated>2018-10-03T00:00:00+03:00</updated><id>http://localhost:4000/2018/10/03/java-vuvedenie</id><content type="html" xml:base="http://localhost:4000/2018/10/03/java-vuvedenie.html">&lt;h2 id=&quot;лекция-1&quot;&gt;Лекция 1&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-03T11:43:09+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Peter Lyubenov</title><subtitle>Софтуерно инженерство II курс</subtitle><entry><title type="html">Въведение в Java</title><link href="http://localhost:4000/2018/10/03/java-vuvedenie.html" rel="alternate" type="text/html" title="Въведение в Java" /><published>2018-10-03T00:00:00+03:00</published><updated>2018-10-03T00:00:00+03:00</updated><id>http://localhost:4000/2018/10/03/java-vuvedenie</id><content type="html" xml:base="http://localhost:4000/2018/10/03/java-vuvedenie.html">&lt;h2 id=&quot;лекция-1&quot;&gt;Лекция 1&lt;/h2&gt;
 
 &lt;h3 id=&quot;кратка-история-на-java&quot;&gt;Кратка история на Java&lt;/h3&gt;
 
@@ -8,7 +8,7 @@
 
 &lt;h3 id=&quot;характеристики&quot;&gt;Характеристики&lt;/h3&gt;
 
-&lt;p&gt;Java е опростен &lt;em&gt;обектно ориентиран&lt;/em&gt;, &lt;em&gt;интерпретиран&lt;/em&gt;, надежден, сигурен, &lt;em&gt;платформено-независим&lt;/em&gt;, преносим, високо производителен, разпределен и динамичен език&lt;/p&gt;
+&lt;p&gt;Java е опростен &lt;mark&gt;обектно ориентиран, интерпретиран&lt;/mark&gt;, надежден, сигурен, &lt;mark&gt;платформено-независим&lt;/mark&gt;, преносим, високо производителен, разпределен и динамичен език&lt;/p&gt;
 
 &lt;h4 id=&quot;обектно-ориентиран&quot;&gt;Обектно ориентиран&lt;/h4&gt;
 
@@ -38,7 +38,7 @@
 &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;me&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;neostarbg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;calculator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;em&gt;Пакетите действат като “папки” при организиране на кода&lt;/em&gt;. Свързани по между си класове са в един пакет&lt;/p&gt;
+&lt;p&gt;&lt;mark&gt;Пакетите действат като &quot;папки&quot; при организиране на кода&lt;/mark&gt;. Свързани по между си класове са в един пакет&lt;/p&gt;
 
 &lt;p&gt;Различните пакети могат да включват клас със същото име, тогава различните класове се различават по пакетите&lt;/p&gt;
 
@@ -48,7 +48,7 @@
 
 &lt;h4 id=&quot;строго-типизиран&quot;&gt;Строго типизиран&lt;/h4&gt;
 
-&lt;p&gt;&lt;em&gt;Съществуват типове променливи&lt;/em&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;int, float, char&lt;/code&gt; &lt;em&gt;както и тип на върнатата стойност на метод&lt;/em&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;int method(){ return 3; }&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;mark&gt;Съществуват типове променливи&lt;/mark&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;int, float, char&lt;/code&gt; &lt;mark&gt;както и тип на върнатата стойност на метод&lt;/mark&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;int method(){ return 3; }&lt;/code&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;сигурен&quot;&gt;Сигурен&lt;/h4&gt;
 
@@ -66,8 +66,8 @@
   &lt;p&gt;&lt;strong&gt;-Мотото на Sun Microsystems&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;em&gt;Изходният Java код се компилира до междинен&lt;/em&gt; &lt;strong&gt;&lt;em&gt;bytecode&lt;/em&gt;&lt;/strong&gt;
-&lt;em&gt;Интерпретатора изпълнява този код&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;mark&gt;Изходният Java код се компилира до междинен &lt;b&gt;bytecode&lt;/b&gt;
+Интерпретатора изпълнява този код&lt;/mark&gt;&lt;/p&gt;
 
 &lt;p&gt;JRE (Java Runtime Environment) интерпретатор може да бъде изтеглен от сайта на Oracle за почти всяка операционна система&lt;/p&gt;
 
@@ -87,17 +87,17 @@
 
 &lt;h4 id=&quot;библиотеки&quot;&gt;&lt;em&gt;Библиотеки&lt;/em&gt;&lt;/h4&gt;
 
-&lt;p&gt;&lt;em&gt;Ползват се от други Java приложения. Те се компилират и архивират в &lt;strong&gt;.jar&lt;/strong&gt; файл&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;mark&gt;Ползват се от други Java приложения. Те се компилират и архивират в &lt;b&gt;.jar&lt;/b&gt; файл&lt;/mark&gt;&lt;/p&gt;
 
 &lt;p&gt;Jar файлове могат да се отварят със всеки архиватор (WinRAR, 7zip, etc.)&lt;/p&gt;
 
 &lt;h3 id=&quot;структура-на-програмата&quot;&gt;Структура на програмата&lt;/h3&gt;
 
-&lt;p&gt;&lt;em&gt;Входна точка е метод с име&lt;/em&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;main()&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;mark&gt;Входната точка е метод с име&lt;/mark&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;main()&lt;/code&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;параметри-от-командния-ред&quot;&gt;Параметри от командния ред&lt;/h4&gt;
 
-&lt;p&gt;&lt;em&gt;При пускане на Java програма от командния ред могат да се задават параметри, които програмата да обработи и да има впредвид. Те се намират в стрингов масив като параметър на&lt;/em&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;main()&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;mark&gt;При пускане на Java програма от командния ред могат да се задават параметри, които програмата да обработи и да има впредвид. Те се намират в стрингов масив като параметър на&lt;/mark&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;main()&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Пример:&lt;/p&gt;
 
@@ -124,7 +124,7 @@ What is your name?
 
 &lt;h3 id=&quot;работа-със-стрингове&quot;&gt;Работа със стрингове&lt;/h3&gt;
 
-&lt;p&gt;Стринговете са част от основната йерархия класове на езика - класа String&lt;/p&gt;
+&lt;p&gt;Стринговете са част от основната йерархия класове на езика - класа Strings&lt;/p&gt;
 
 &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Pesho&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//String с главна буква за разлика от C#&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -140,9 +140,47 @@ What is your name?
         &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello, world!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
     &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="лекция" /><category term="java" /><category term="2 курс" /><category term="3 семестър" /><summary type="html">Лекция 1</summary></entry><entry><title type="html">Записки по Дискретни структури</title><link href="http://localhost:4000/%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8/2018/10/02/discrete-math-notes.html" rel="alternate" type="text/html" title="Записки по Дискретни структури" /><published>2018-10-02T00:00:00+03:00</published><updated>2018-10-02T00:00:00+03:00</updated><id>http://localhost:4000/%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8/2018/10/02/discrete-math-notes</id><content type="html" xml:base="http://localhost:4000/%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8/2018/10/02/discrete-math-notes.html">&lt;p&gt;Всичките ми записки по лекциите по Дискретни структури можете да намерите &lt;a href=&quot;https://docs.google.com/document/d/1vc7HteiSO8B1uZj1aRheYjo5Me59SToRKeJap-KZPWc/edit?usp=sharing&quot;&gt;тук&lt;/a&gt;.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="лекция" /><category term="java" /><category term="2 курс" /><category term="3 семестър" /><summary type="html">Лекция 1</summary></entry><entry><title type="html">Елементи от теория на множествата</title><link href="http://localhost:4000/2018/10/02/discrete-elementi.html" rel="alternate" type="text/html" title="Елементи от теория на множествата" /><published>2018-10-02T00:00:00+03:00</published><updated>2018-10-02T00:00:00+03:00</updated><id>http://localhost:4000/2018/10/02/discrete-elementi</id><content type="html" xml:base="http://localhost:4000/2018/10/02/discrete-elementi.html">&lt;p&gt;0, 1, 2, 3, …, n&lt;/p&gt;
 
-&lt;p&gt;Ако не съм се отказал, трябва да се актуализират след всяка лекция&lt;/p&gt;</content><author><name></name></author><category term="Записки" /><category term="записки" /><category term="математика" /><category term="дискретни структури" /><category term="2 курс" /><category term="3 семестър" /><summary type="html">Всичките ми записки по лекциите по Дискретни структури можете да намерите тук.</summary></entry><entry><title type="html">PHP базирани работни рамки - упражнение 1</title><link href="http://localhost:4000/2018/10/02/php-upr.html" rel="alternate" type="text/html" title="PHP базирани работни рамки - упражнение 1" /><published>2018-10-02T00:00:00+03:00</published><updated>2018-10-02T00:00:00+03:00</updated><id>http://localhost:4000/2018/10/02/php-upr</id><content type="html" xml:base="http://localhost:4000/2018/10/02/php-upr.html">&lt;ul&gt;
+&lt;p&gt;0, 1, 4, 9, …, n^2&lt;/p&gt;
+
+&lt;p&gt;Безкрайните множества А = {0,1,2,…,n} и B = {x l x = n^2, n∈A} имат еднакъв брой елементи&lt;/p&gt;
+
+&lt;p&gt;√2 и √5 са ирационални числа - не могат да се представят като рационална дроб от две цели числа&lt;/p&gt;
+
+&lt;h2 id=&quot;множества---основни-понятия-операции-свойства&quot;&gt;Множества - основни понятия, операции, свойства&lt;/h2&gt;
+
+&lt;h3 id=&quot;множества---основни-понятия&quot;&gt;Множества - основни понятия&lt;/h3&gt;
+
+&lt;p&gt;&lt;mark&gt;“Множество” е първично понятие; не може да се дефинира&lt;/mark&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;mark&gt;Множествата се означават с A, B, C, … или A1, A2, A3…&lt;/mark&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;mark&gt;Елементите се означават с a, b, c, … или а1, а2, а3... &lt;/mark&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;задаване-на-множество&quot;&gt;Задаване на множество&lt;/h3&gt;
+
+&lt;h4 id=&quot;дескриптивно---описваме-елементите-които-то-съдържа&quot;&gt;&lt;mark&gt;Дескриптивно - описваме елементите, които то съдържа&lt;/mark&gt;&lt;/h4&gt;
+
+&lt;p&gt;А = { 1, 3, 5, 7, 9}  - Нечетни десетични цифри&lt;/p&gt;
+
+&lt;p&gt;B = {а, ъ, о, у, е, и} - гласните букви в българската азбука&lt;/p&gt;
+
+&lt;p&gt;C = {понеделник, вторник, сряда, четвъртък, петък} - делничните дни&lt;/p&gt;
+
+&lt;p&gt;D = {юни, юли, август} - летните месеци&lt;/p&gt;
+
+&lt;p&gt;Е = {Ани, Нели, Катя, Поля}&lt;/p&gt;
+
+&lt;h4 id=&quot;конструктивно&quot;&gt;&lt;mark&gt;Конструктивно&lt;/mark&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;mark&gt;B { x | x∈A; σ(x)}&lt;/mark&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;mark&gt;σ(x) е условие, което трябва да е изпълнено&lt;/mark&gt;&lt;/p&gt;
+
+&lt;p&gt;А = { 0, 1, 2, …. 10 }&lt;/p&gt;
+
+&lt;p&gt;B = { x l x = 2y; y∈B } = { 0, 2, 4, 6, …., 20 }&lt;/p&gt;</content><author><name></name></author><category term="лекция" /><category term="дискретни структури" /><category term="2 курс" /><category term="3 семестър" /><summary type="html">0, 1, 2, 3, …, n</summary></entry><entry><title type="html">PHP базирани работни рамки - упражнение 1</title><link href="http://localhost:4000/2018/10/02/php-upr.html" rel="alternate" type="text/html" title="PHP базирани работни рамки - упражнение 1" /><published>2018-10-02T00:00:00+03:00</published><updated>2018-10-02T00:00:00+03:00</updated><id>http://localhost:4000/2018/10/02/php-upr</id><content type="html" xml:base="http://localhost:4000/2018/10/02/php-upr.html">&lt;ul&gt;
   &lt;li&gt;Обикновено се използва заедно с Apache (HTTP сървър) и MySQL (БД)&lt;/li&gt;
   &lt;li&gt;(аз лично ползвам XAMPP софтуерен пакет който включва всичко + графичен интерфейс ^-^)&lt;/li&gt;
 &lt;/ul&gt;

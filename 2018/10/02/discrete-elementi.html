@@ -11,7 +11,7 @@
 
   <title>
     
-      Записки по Дискретни структури &middot; Peter Lyubenov
+      Елементи от теория на множествата &middot; Peter Lyubenov
     
   </title>
 
@@ -33,6 +33,11 @@
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" />
 
   <!-- Additional head bits without overriding original head -->
+<style>
+mark {
+    background-color: #FFFFBB;
+}
+</style>
 </head>
 
 
@@ -89,6 +94,10 @@
   
 
   
+    
+  
+
+  
 
   
 
@@ -96,6 +105,10 @@
   
 
 
+  
+
+  
+    
   
 
   
@@ -184,33 +197,59 @@
 
     <main class="container">
       <header>
-  <h1 class="post-title">Записки по Дискретни структури</h1>
+  <h1 class="post-title">Елементи от теория на множествата</h1>
 </header>
 <div class="content">
   <div class="post-meta">
   <span class="post-date">02 Oct 2018</span>
   <span class="post-categories">
     
-      &bull;
-
-      
-      
-      
-
-      
-        <a href="/notes/">
-          Записки
-        </a>
-      
-    
   </span>
 </div>
 
 
   <div class="post-body">
-    <p>Всичките ми записки по лекциите по Дискретни структури можете да намерите <a href="https://docs.google.com/document/d/1vc7HteiSO8B1uZj1aRheYjo5Me59SToRKeJap-KZPWc/edit?usp=sharing">тук</a>.</p>
+    <p>0, 1, 2, 3, …, n</p>
 
-<p>Ако не съм се отказал, трябва да се актуализират след всяка лекция</p>
+<p>0, 1, 4, 9, …, n^2</p>
+
+<p>Безкрайните множества А = {0,1,2,…,n} и B = {x l x = n^2, n∈A} имат еднакъв брой елементи</p>
+
+<p>√2 и √5 са ирационални числа - не могат да се представят като рационална дроб от две цели числа</p>
+
+<h2 id="множества---основни-понятия-операции-свойства">Множества - основни понятия, операции, свойства</h2>
+
+<h3 id="множества---основни-понятия">Множества - основни понятия</h3>
+
+<p><mark>“Множество” е първично понятие; не може да се дефинира</mark></p>
+
+<p><mark>Множествата се означават с A, B, C, … или A1, A2, A3…</mark></p>
+
+<p><mark>Елементите се означават с a, b, c, … или а1, а2, а3... </mark></p>
+
+<h3 id="задаване-на-множество">Задаване на множество</h3>
+
+<h4 id="дескриптивно---описваме-елементите-които-то-съдържа"><mark>Дескриптивно - описваме елементите, които то съдържа</mark></h4>
+
+<p>А = { 1, 3, 5, 7, 9}  - Нечетни десетични цифри</p>
+
+<p>B = {а, ъ, о, у, е, и} - гласните букви в българската азбука</p>
+
+<p>C = {понеделник, вторник, сряда, четвъртък, петък} - делничните дни</p>
+
+<p>D = {юни, юли, август} - летните месеци</p>
+
+<p>Е = {Ани, Нели, Катя, Поля}</p>
+
+<h4 id="конструктивно"><mark>Конструктивно</mark></h4>
+
+<p><mark>B { x | x∈A; σ(x)}</mark></p>
+
+<p><mark>σ(x) е условие, което трябва да е изпълнено</mark></p>
+
+<p>А = { 0, 1, 2, …. 10 }</p>
+
+<p>B = { x l x = 2y; y∈B } = { 0, 2, 4, 6, …., 20 }</p>
 
     
 
@@ -219,25 +258,14 @@
 <div class="post-tags">
   
     
-    <a href="/tags.html#записки">
+    <a href="/tags.html#лекция">
     
       <span class="icon">
         <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
 </svg>
-      </span>&nbsp;<span class="tag-name">записки</span>
-    </a>
-  
-    
-    <a href="/tags.html#математика">
-    
-      <span class="icon">
-        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h24v24H0z" fill="none"/>
-    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
-</svg>
-      </span>&nbsp;<span class="tag-name">математика</span>
+      </span>&nbsp;<span class="tag-name">лекция</span>
     </a>
   
     
