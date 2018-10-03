@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+  <title>
+    
+      Въведение в Java &middot; Peter Lyubenov
+    
+  </title>
+
+  
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface" />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/favicon.png" />
+<link rel="shortcut icon" href="/favicon.ico" />
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" />
+
+  <!-- Additional head bits without overriding original head -->
+</head>
+
+
+  <body class="post">
+
+    <div id="sidebar">
+  <header>
+    <div class="site-title">
+      <a href="/">
+        
+          <span class="back-arrow icon"><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0 0h24v24H0z" fill="none"/>
+  <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+</svg></span>
+        
+        Peter Lyubenov
+      </a>
+    </div>
+    <p class="lead">Софтуерно инженерство II курс</p>
+  </header>
+  <nav id="sidebar-nav-links">
+  
+  
+
+  
+
+  
+
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+
+  
+
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+
+  <a href="/programa/">Програма</a>
+<a href="/notes/">Записки</a>
+</nav>
+
+
+  
+
+  <nav id="sidebar-icon-links">
+  
+
+  <a id="subscribe-link"
+     class="icon" title="Subscribe" aria-label="Subscribe"
+     href="/feed.xml">
+    <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <circle cx="6.18" cy="17.82" r="2.18"/>
+    <path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/>
+</svg>
+  </a>
+
+  
+  
+  
+  
+
+  
+    <a id="tags-link"
+       class="icon"
+       title="Tags" aria-label="Tags"
+       href="/tags.html">
+      <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
+</svg>
+    </a>
+  
+
+  
+
+  <a id="github-link"
+        class="icon" title="My Github" aria-label="Github Project"
+        href="https://github.com/neostarbg">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 28" height="24" width="28"><path d="M12 2c6.625 0 12 5.375 12 12 0 5.297-3.437 9.797-8.203 11.391-0.609 0.109-0.828-0.266-0.828-0.578 0-0.391 0.016-1.687 0.016-3.297 0-1.125-0.375-1.844-0.812-2.219 2.672-0.297 5.484-1.313 5.484-5.922 0-1.313-0.469-2.375-1.234-3.219 0.125-0.313 0.531-1.531-0.125-3.187-1-0.313-3.297 1.234-3.297 1.234-0.953-0.266-1.984-0.406-3-0.406s-2.047 0.141-3 0.406c0 0-2.297-1.547-3.297-1.234-0.656 1.656-0.25 2.875-0.125 3.187-0.766 0.844-1.234 1.906-1.234 3.219 0 4.594 2.797 5.625 5.469 5.922-0.344 0.313-0.656 0.844-0.766 1.609-0.688 0.313-2.438 0.844-3.484-1-0.656-1.141-1.844-1.234-1.844-1.234-1.172-0.016-0.078 0.734-0.078 0.734 0.781 0.359 1.328 1.75 1.328 1.75 0.703 2.141 4.047 1.422 4.047 1.422 0 1 0.016 1.937 0.016 2.234 0 0.313-0.219 0.688-0.828 0.578-4.766-1.594-8.203-6.094-8.203-11.391 0-6.625 5.375-12 12-12zM4.547 19.234c0.031-0.063-0.016-0.141-0.109-0.187-0.094-0.031-0.172-0.016-0.203 0.031-0.031 0.063 0.016 0.141 0.109 0.187 0.078 0.047 0.172 0.031 0.203-0.031zM5.031 19.766c0.063-0.047 0.047-0.156-0.031-0.25-0.078-0.078-0.187-0.109-0.25-0.047-0.063 0.047-0.047 0.156 0.031 0.25 0.078 0.078 0.187 0.109 0.25 0.047zM5.5 20.469c0.078-0.063 0.078-0.187 0-0.297-0.063-0.109-0.187-0.156-0.266-0.094-0.078 0.047-0.078 0.172 0 0.281s0.203 0.156 0.266 0.109zM6.156 21.125c0.063-0.063 0.031-0.203-0.063-0.297-0.109-0.109-0.25-0.125-0.313-0.047-0.078 0.063-0.047 0.203 0.063 0.297 0.109 0.109 0.25 0.125 0.313 0.047zM7.047 21.516c0.031-0.094-0.063-0.203-0.203-0.25-0.125-0.031-0.266 0.016-0.297 0.109s0.063 0.203 0.203 0.234c0.125 0.047 0.266 0 0.297-0.094zM8.031 21.594c0-0.109-0.125-0.187-0.266-0.172-0.141 0-0.25 0.078-0.25 0.172 0 0.109 0.109 0.187 0.266 0.172 0.141 0 0.25-0.078 0.25-0.172zM8.937 21.438c-0.016-0.094-0.141-0.156-0.281-0.141-0.141 0.031-0.234 0.125-0.219 0.234 0.016 0.094 0.141 0.156 0.281 0.125s0.234-0.125 0.219-0.219z"></path>
+</svg>
+
+</a>
+</nav>
+
+  <p>
+  &copy; 2018.
+  Петър Любенов - NeoStarBG
+</p>
+
+</div>
+
+    <main class="container">
+      <header>
+  <h1 class="post-title">Въведение в Java</h1>
+</header>
+<div class="content">
+  <div class="post-meta">
+  <span class="post-date">03 Oct 2018</span>
+  <span class="post-categories">
+    
+  </span>
+</div>
+
+
+  <div class="post-body">
+    <h2 id="лекция-1">Лекция 1</h2>
+
+<h3 id="кратка-история-на-java">Кратка история на Java</h3>
+
+<p>Замислен 1991-1992 като платформено-независимo (cross-platform) разширение на C компилаторите</p>
+
+<p>Официално обявен през Май 1995 от Sun Microsystems на конференцията Sun World’95</p>
+
+<h3 id="характеристики">Характеристики</h3>
+
+<p>Java е опростен <em>обектно ориентиран</em>, <em>интерпретиран</em>, надежден, сигурен, <em>платформено-независим</em>, преносим, високо производителен, разпределен и динамичен език</p>
+
+<h4 id="обектно-ориентиран">Обектно ориентиран</h4>
+
+<ul>
+  <li>
+    <p>Йерархия на класовете с единствен корен Object (всички класове наследяват класа Object)</p>
+  </li>
+  <li>
+    <p>Чисто обектно ориентиран</p>
+  </li>
+  <li>
+    <p>Класовете са организиарни в пакети (package)</p>
+  </li>
+</ul>
+
+<h5 id="пакети">Пакети</h5>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="n">com</span><span class="o">.</span><span class="na">google</span><span class="o">.</span><span class="na">program</span><span class="o">;</span>
+</code></pre></div></div>
+
+<p>Конвенцията е сайта на компанията или програмиста, обърната (.com,net,org първо, след това името на сайта) и името на програмата</p>
+
+<p>Ако нямаме сайт може да използваме <code class="highlighter-rouge">me.&lt;име&gt;.program</code></p>
+
+<p>Пример:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="n">me</span><span class="o">.</span><span class="na">neostarbg</span><span class="o">.</span><span class="na">calculator</span><span class="o">;</span>
+</code></pre></div></div>
+
+<p><em>Пакетите действат като “папки” при организиране на кода</em>. Свързани по между си класове са в един пакет</p>
+
+<p>Различните пакети могат да включват клас със същото име, тогава различните класове се различават по пакетите</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">me</span><span class="o">.</span><span class="na">neostarbg</span><span class="o">.</span><span class="na">calculator</span><span class="o">.</span><span class="na">first</span><span class="o">.</span><span class="na">ClassName</span><span class="o">;</span>
+<span class="n">me</span><span class="o">.</span><span class="na">neostarbg</span><span class="o">.</span><span class="na">calculator</span><span class="o">.</span><span class="na">second</span><span class="o">.</span><span class="na">ClassName</span><span class="o">;</span>
+</code></pre></div></div>
+
+<h4 id="строго-типизиран">Строго типизиран</h4>
+
+<p><em>Съществуват типове променливи</em> <code class="highlighter-rouge">int, float, char</code> <em>както и тип на върнатата стойност на метод</em> <code class="highlighter-rouge">int method(){ return 3; }</code></p>
+
+<h4 id="сигурен">Сигурен</h4>
+
+<p>Повишена надеждност</p>
+
+<p>Концепцията за сигурност е вградена в езика - JVM (Java Virtual Machine):</p>
+
+<p>Кодът се изпълнява във виртуална машина, не е възможно да повреди операционната система или хардуера</p>
+
+<h4 id="платформено-независим">Платформено независим</h4>
+
+<blockquote>
+  <p><em>“Write once, run everywhere”</em></p>
+
+  <p><strong>-Мотото на Sun Microsystems</strong></p>
+</blockquote>
+
+<p><em>Изходният Java код се компилира до междинен</em> <strong><em>bytecode</em></strong>
+<em>Интерпретатора изпълнява този код</em></p>
+
+<p>JRE (Java Runtime Environment) интерпретатор може да бъде изтеглен от сайта на Oracle за почти всяка операционна система</p>
+
+<h3 id="основни-типове-приложения">Основни типове приложения</h3>
+
+<h4 id="аплети">Аплети</h4>
+
+<p>Applet - little application</p>
+
+<blockquote>
+  <p>Java проложения, вградени в HTML страница. Те се изпълняват от JVM вграден в браузъра</p>
+</blockquote>
+
+<p>(вече не се използват никъде)</p>
+
+<h4 id="конзолни-проложения"><em>Конзолни проложения</em></h4>
+
+<h4 id="библиотеки"><em>Библиотеки</em></h4>
+
+<p><em>Ползват се от други Java приложения. Те се компилират и архивират в <strong>.jar</strong> файл</em></p>
+
+<p>Jar файлове могат да се отварят със всеки архиватор (WinRAR, 7zip, etc.)</p>
+
+<h3 id="структура-на-програмата">Структура на програмата</h3>
+
+<p><em>Входна точка е метод с име</em> <code class="highlighter-rouge">main()</code></p>
+
+<h4 id="параметри-от-командния-ред">Параметри от командния ред</h4>
+
+<p><em>При пускане на Java програма от командния ред могат да се задават параметри, които програмата да обработи и да има впредвид. Те се намират в стрингов масив като параметър на</em> <code class="highlighter-rouge">main()</code></p>
+
+<p>Пример:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">arguments</span><span class="o">)</span>
+<span class="o">{</span>
+    <span class="k">if</span><span class="o">(</span><span class="n">arguments</span><span class="o">.</span><span class="na">length</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">)</span> <span class="c1">//Ако броят аргументи са повече от 0</span>
+    <span class="o">{</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Hello, "</span> <span class="o">+</span> <span class="n">arguments</span><span class="o">[</span><span class="mi">0</span><span class="o">]);</span> <span class="c1">//Hello &lt;име&gt;</span>
+    <span class="o">}</span>
+    <span class="k">else</span> 
+    <span class="o">{</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"What is your name?"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$java -jar myProgram.jar pesho
+Hello, pesho
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$java -jar myProgram.jar
+What is your name?
+</code></pre></div></div>
+
+<h3 id="работа-със-стрингове">Работа със стрингове</h3>
+
+<p>Стринговете са част от основната йерархия класове на езика - класа String</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Pesho"</span><span class="o">;</span> <span class="c1">//String с главна буква за разлика от C#</span>
+</code></pre></div></div>
+
+<h3 id="примерна-hello-world-програма---целия-файл">Примерна Hello World програма - целия файл</h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="n">me</span><span class="o">.</span><span class="na">yourname</span><span class="o">.</span><span class="na">programname</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ProgramName</span>
+<span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span> <span class="n">args</span><span class="o">[])</span>
+    <span class="o">{</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Hello, world!"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+
+    
+
+
+
+<div class="post-tags">
+  
+    
+    <a href="/tags.html#лекция">
+    
+      <span class="icon">
+        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
+</svg>
+      </span>&nbsp;<span class="tag-name">лекция</span>
+    </a>
+  
+    
+    <a href="/tags.html#java">
+    
+      <span class="icon">
+        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
+</svg>
+      </span>&nbsp;<span class="tag-name">java</span>
+    </a>
+  
+    
+    <a href="/tags.html#2-курс">
+    
+      <span class="icon">
+        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
+</svg>
+      </span>&nbsp;<span class="tag-name">2 курс</span>
+    </a>
+  
+    
+    <a href="/tags.html#3-семестър">
+    
+      <span class="icon">
+        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
+</svg>
+      </span>&nbsp;<span class="tag-name">3 семестър</span>
+    </a>
+  
+</div>
+  </div>
+
+  
+  <section class="related">
+  <h2>Related Posts</h2>
+  <ul class="posts-list">
+    
+      <li>
+        <h3>
+          <a href="/2018/10/02/php-upr.html">
+            PHP базирани работни рамки - упражнение 1
+            <small>02 Oct 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8/2018/10/02/discrete-math-notes.html">
+            Записки по Дискретни структури
+            <small>02 Oct 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</section>
+
+</div>
+
+    </main>
+
+    <!-- Optional footer content -->
+
+  </body>
+</html>

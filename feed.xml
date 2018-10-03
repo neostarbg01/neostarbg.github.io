@@ -1,4 +1,148 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-10-02T23:09:59+03:00</updated><id>/feed.xml</id><title type="html">Peter Lyubenov</title><subtitle>Софтуерно инженерство II курс</subtitle><entry><title type="html">PHP базирани работни рамки - упражнение 1</title><link href="/2018/10/02/php-upr.html" rel="alternate" type="text/html" title="PHP базирани работни рамки - упражнение 1" /><published>2018-10-02T00:00:00+03:00</published><updated>2018-10-02T00:00:00+03:00</updated><id>/2018/10/02/php-upr</id><content type="html" xml:base="/2018/10/02/php-upr.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-03T11:07:30+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Peter Lyubenov</title><subtitle>Софтуерно инженерство II курс</subtitle><entry><title type="html">Въведение в Java</title><link href="http://localhost:4000/2018/10/03/java-vuvedenie.html" rel="alternate" type="text/html" title="Въведение в Java" /><published>2018-10-03T00:00:00+03:00</published><updated>2018-10-03T00:00:00+03:00</updated><id>http://localhost:4000/2018/10/03/java-vuvedenie</id><content type="html" xml:base="http://localhost:4000/2018/10/03/java-vuvedenie.html">&lt;h2 id=&quot;лекция-1&quot;&gt;Лекция 1&lt;/h2&gt;
+
+&lt;h3 id=&quot;кратка-история-на-java&quot;&gt;Кратка история на Java&lt;/h3&gt;
+
+&lt;p&gt;Замислен 1991-1992 като платформено-независимo (cross-platform) разширение на C компилаторите&lt;/p&gt;
+
+&lt;p&gt;Официално обявен през Май 1995 от Sun Microsystems на конференцията Sun World’95&lt;/p&gt;
+
+&lt;h3 id=&quot;характеристики&quot;&gt;Характеристики&lt;/h3&gt;
+
+&lt;p&gt;Java е опростен &lt;em&gt;обектно ориентиран&lt;/em&gt;, &lt;em&gt;интерпретиран&lt;/em&gt;, надежден, сигурен, &lt;em&gt;платформено-независим&lt;/em&gt;, преносим, високо производителен, разпределен и динамичен език&lt;/p&gt;
+
+&lt;h4 id=&quot;обектно-ориентиран&quot;&gt;Обектно ориентиран&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Йерархия на класовете с единствен корен Object (всички класове наследяват класа Object)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Чисто обектно ориентиран&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Класовете са организиарни в пакети (package)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;пакети&quot;&gt;Пакети&lt;/h5&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;google&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;program&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Конвенцията е сайта на компанията или програмиста, обърната (.com,net,org първо, след това името на сайта) и името на програмата&lt;/p&gt;
+
+&lt;p&gt;Ако нямаме сайт може да използваме &lt;code class=&quot;highlighter-rouge&quot;&gt;me.&amp;lt;име&amp;gt;.program&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Пример:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;me&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;neostarbg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;calculator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;Пакетите действат като “папки” при организиране на кода&lt;/em&gt;. Свързани по между си класове са в един пакет&lt;/p&gt;
+
+&lt;p&gt;Различните пакети могат да включват клас със същото име, тогава различните класове се различават по пакетите&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;me&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;neostarbg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;calculator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;ClassName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;me&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;neostarbg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;calculator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;second&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;ClassName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;строго-типизиран&quot;&gt;Строго типизиран&lt;/h4&gt;
+
+&lt;p&gt;&lt;em&gt;Съществуват типове променливи&lt;/em&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;int, float, char&lt;/code&gt; &lt;em&gt;както и тип на върнатата стойност на метод&lt;/em&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;int method(){ return 3; }&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;сигурен&quot;&gt;Сигурен&lt;/h4&gt;
+
+&lt;p&gt;Повишена надеждност&lt;/p&gt;
+
+&lt;p&gt;Концепцията за сигурност е вградена в езика - JVM (Java Virtual Machine):&lt;/p&gt;
+
+&lt;p&gt;Кодът се изпълнява във виртуална машина, не е възможно да повреди операционната система или хардуера&lt;/p&gt;
+
+&lt;h4 id=&quot;платформено-независим&quot;&gt;Платформено независим&lt;/h4&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;“Write once, run everywhere”&lt;/em&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;strong&gt;-Мотото на Sun Microsystems&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;Изходният Java код се компилира до междинен&lt;/em&gt; &lt;strong&gt;&lt;em&gt;bytecode&lt;/em&gt;&lt;/strong&gt;
+&lt;em&gt;Интерпретатора изпълнява този код&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;JRE (Java Runtime Environment) интерпретатор може да бъде изтеглен от сайта на Oracle за почти всяка операционна система&lt;/p&gt;
+
+&lt;h3 id=&quot;основни-типове-приложения&quot;&gt;Основни типове приложения&lt;/h3&gt;
+
+&lt;h4 id=&quot;аплети&quot;&gt;Аплети&lt;/h4&gt;
+
+&lt;p&gt;Applet - little application&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Java проложения, вградени в HTML страница. Те се изпълняват от JVM вграден в браузъра&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;(вече не се използват никъде)&lt;/p&gt;
+
+&lt;h4 id=&quot;конзолни-проложения&quot;&gt;&lt;em&gt;Конзолни проложения&lt;/em&gt;&lt;/h4&gt;
+
+&lt;h4 id=&quot;библиотеки&quot;&gt;&lt;em&gt;Библиотеки&lt;/em&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;em&gt;Ползват се от други Java приложения. Те се компилират и архивират в &lt;strong&gt;.jar&lt;/strong&gt; файл&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Jar файлове могат да се отварят със всеки архиватор (WinRAR, 7zip, etc.)&lt;/p&gt;
+
+&lt;h3 id=&quot;структура-на-програмата&quot;&gt;Структура на програмата&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Входна точка е метод с име&lt;/em&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;main()&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;параметри-от-командния-ред&quot;&gt;Параметри от командния ред&lt;/h4&gt;
+
+&lt;p&gt;&lt;em&gt;При пускане на Java програма от командния ред могат да се задават параметри, които програмата да обработи и да има впредвид. Те се намират в стрингов масив като параметър на&lt;/em&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;main()&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Пример:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arguments&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arguments&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//Ако броят аргументи са повече от 0&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello, &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arguments&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//Hello &amp;lt;име&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; 
+    &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;What is your name?&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$java -jar myProgram.jar pesho
+Hello, pesho
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$java -jar myProgram.jar
+What is your name?
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;работа-със-стрингове&quot;&gt;Работа със стрингове&lt;/h3&gt;
+
+&lt;p&gt;Стринговете са част от основната йерархия класове на езика - класа String&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Pesho&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//String с главна буква за разлика от C#&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;примерна-hello-world-програма---целия-файл&quot;&gt;Примерна Hello World програма - целия файл&lt;/h3&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;me&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;yourname&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;programname&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ProgramName&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[])&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello, world!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="лекция" /><category term="java" /><category term="2 курс" /><category term="3 семестър" /><summary type="html">Лекция 1</summary></entry><entry><title type="html">Записки по Дискретни структури</title><link href="http://localhost:4000/%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8/2018/10/02/discrete-math-notes.html" rel="alternate" type="text/html" title="Записки по Дискретни структури" /><published>2018-10-02T00:00:00+03:00</published><updated>2018-10-02T00:00:00+03:00</updated><id>http://localhost:4000/%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8/2018/10/02/discrete-math-notes</id><content type="html" xml:base="http://localhost:4000/%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8/2018/10/02/discrete-math-notes.html">&lt;p&gt;Всичките ми записки по лекциите по Дискретни структури можете да намерите &lt;a href=&quot;https://docs.google.com/document/d/1vc7HteiSO8B1uZj1aRheYjo5Me59SToRKeJap-KZPWc/edit?usp=sharing&quot;&gt;тук&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ако не съм се отказал, трябва да се актуализират след всяка лекция&lt;/p&gt;</content><author><name></name></author><category term="Записки" /><category term="записки" /><category term="математика" /><category term="дискретни структури" /><category term="2 курс" /><category term="3 семестър" /><summary type="html">Всичките ми записки по лекциите по Дискретни структури можете да намерите тук.</summary></entry><entry><title type="html">PHP базирани работни рамки - упражнение 1</title><link href="http://localhost:4000/2018/10/02/php-upr.html" rel="alternate" type="text/html" title="PHP базирани работни рамки - упражнение 1" /><published>2018-10-02T00:00:00+03:00</published><updated>2018-10-02T00:00:00+03:00</updated><id>http://localhost:4000/2018/10/02/php-upr</id><content type="html" xml:base="http://localhost:4000/2018/10/02/php-upr.html">&lt;ul&gt;
   &lt;li&gt;Обикновено се използва заедно с Apache (HTTP сървър) и MySQL (БД)&lt;/li&gt;
   &lt;li&gt;(аз лично ползвам XAMPP софтуерен пакет който включва всичко + графичен интерфейс ^-^)&lt;/li&gt;
 &lt;/ul&gt;
@@ -39,6 +183,4 @@
     &lt;span class=&quot;nv&quot;&gt;$j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="упражнение" /><category term="php" /><category term="2 курс" /><category term="3 семестър" /><summary type="html">Обикновено се използва заедно с Apache (HTTP сървър) и MySQL (БД) (аз лично ползвам XAMPP софтуерен пакет който включва всичко + графичен интерфейс ^-^)</summary></entry><entry><title type="html">Записки по Дискретни структури</title><link href="/%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8/2018/10/02/discrete-math-notes.html" rel="alternate" type="text/html" title="Записки по Дискретни структури" /><published>2018-10-02T00:00:00+03:00</published><updated>2018-10-02T00:00:00+03:00</updated><id>/%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8/2018/10/02/discrete-math-notes</id><content type="html" xml:base="/%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8/2018/10/02/discrete-math-notes.html">&lt;p&gt;Всичките ми записки по лекциите по Дискретни структури можете да намерите &lt;a href=&quot;https://docs.google.com/document/d/1vc7HteiSO8B1uZj1aRheYjo5Me59SToRKeJap-KZPWc/edit?usp=sharing&quot;&gt;тук&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Ако не съм се отказал, трябва да се актуализират след всяка лекция&lt;/p&gt;</content><author><name></name></author><category term="Записки" /><category term="записки" /><category term="математика" /><category term="дискретни структури" /><category term="2 курс" /><category term="3 семестър" /><summary type="html">Всичките ми записки по лекциите по Дискретни структури можете да намерите тук.</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="упражнение" /><category term="php" /><category term="2 курс" /><category term="3 семестър" /><summary type="html">Обикновено се използва заедно с Apache (HTTP сървър) и MySQL (БД) (аз лично ползвам XAMPP софтуерен пакет който включва всичко + графичен интерфейс ^-^)</summary></entry></feed>
